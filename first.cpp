@@ -1,3 +1,9 @@
+//***********************************************************************************//
+//                This program sorts an array using bubble sort algorithm            //
+//***********************************************************************************//
+//                    Copyright 2019, @ Avaneesh, All Rights reserved.               //
+//***********************************************************************************//
+
 #include<iostream>
 using namespace std;
 class destination
