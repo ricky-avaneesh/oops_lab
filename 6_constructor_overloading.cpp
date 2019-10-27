@@ -12,10 +12,31 @@ class rational
 	public:
 		rational();
 		rational(int,int);
+		friend ostream &operator<<( ostream &output, const rational &R)
+		{
+			output<<"Rational numnber : "<<R.numerator<<"/"<<R.denominator;
+			return output;
+		}
+		friend istream &operator>>( istream &input, rational &R)
+		{
+			cout<<"Enter Numerator :";
+			input>>R.numerator;
+			cout<<"Enter Denominator :";
+			input>>R.denominator;
+			return input;
+		}
+		rational operator + (rational const &obj)
+		{
+			rational a;
+			a.denominator = denominator*obj.denominator;
+			a.numerator = numerator*obj.denominator + obj.numerator*denominator;
+			a.reduce();
+			return a;
+		}
 		//function overloading for (+)
 		void reduce();
-		//function overloading for (<<) and (>>)
 		void display();
+
 
 };
 rational::rational()
@@ -56,8 +77,7 @@ int main()
 {
 	rational a;
 	rational b(8,4);
-	a.display();
-	b.display();
-	b.reduce();
+	rational c = a+b;
+	c.display();
 	return 0;
 }
