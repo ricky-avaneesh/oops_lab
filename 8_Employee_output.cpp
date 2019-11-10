@@ -1,4 +1,4 @@
-//                    Program to store a phone number in given format	             //
+//                  Program to demonstrate function calls in inheritance	         //
 //***********************************************************************************//
 //                    Copyright 2019, @ Avaneesh, All Rights reserved.               //
 //***********************************************************************************//
