@@ -1,4 +1,4 @@
-//                     Program to demonstrate inheritance in classes	             //
+//            Program to demonstrate function calls from inherited classes	         //
 //***********************************************************************************//
 //                    Copyright 2019, @ Avaneesh, All Rights reserved.               //
 //***********************************************************************************//
